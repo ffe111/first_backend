@@ -9,7 +9,7 @@ class MongoDatabase {
   clientOptions;
   connection;
   constructor() {
-    this.uri = "mongodb://usrname:password@localhost:27017";
+    this.uri = "mongodb://admin:admin@localhost:27017";
     this.clientOptions = {
       serverApi: { version: "1", strict: true, deprecationErrors: true },
     };

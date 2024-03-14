@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../../database/schema/user");
+const User = require("../database/schema/user");
 
 router.get("/", async (req, res) => {
   const users = await User.find().lean();
